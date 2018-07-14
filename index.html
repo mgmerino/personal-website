@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>mgz.sh @ internet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 1em;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        h1{ padding-bottom: 10px; /*border-bottom: 2px solid rgba(0, 0, 0, 0.61);*/}
+        p { text-align: justify;}
+        canvas { width: 100%; height: 100% }
+
+        .wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .col-50 {
+            width: 50%;
+            margin: 10px auto;
+            clear: both;
+        }
+        @-webkit-keyframes move-bg {
+             0% {background-position: 0% 0%; }
+             100% {background-position: 100px 0%; }
+         }
+        .logo {
+
+            clear: both;
+            background: url("img/rotated.svg"); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            -webkit-animation: move-bg;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 0.01s;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="col-50">
+            <div class="logo">
+	            <pre>
+
+                                      __
+                                     /\ \
+  ___ ___      __   ____         ____\ \ \___
+/' __` __`\  /'_ `\/\_ ,`\      /',__\\ \  _ `\
+/\ \/\ \/\ \/\ \L\ \/_/  /_  __/\__, `\\ \ \ \ \
+\ \_\ \_\ \_\ \____ \/\____\/\_\/\____/ \ \_\ \_\
+ \/_/\/_/\/_/\/___L\ \/____/\/_/\/___/   \/_/\/_/
+               /\____/
+               \_/__/
+
+	            </pre>
+            </div>
+        </div>
+        <div class="col-50">
+            <h1>Hola :-)</h1>
+            <p>I'm Manu, and I am self-taugh backend developer. I have an intresting carreer through differents environments, starting in advertising agencies, big IT consulting and small studios. I've been also a teacher of several programming languages.</p>
+            <p>I am mainly focused on developing nice backends, with strong interest on scalability, good architectural design and unix systems. I love to `shell` everything.</p>
+            <p>I developed a wide range of sites using php, but latetly I feeling overwhelmingly attracted by Ruby ecosystem, and more precisely about Ruby on Rails. Python, Javascript and Processing are other languages that I'm diggin' and enjoy to when I have the chance.</p>
+            <p>As a LEGO fan, I love to build things since I was a kid, and still do.</p>
+            <p>Some links of doubtly interest:</p>
+            <ul>
+                <li><a href="//github.com/mgmerino">Github</a></li>
+                <li><a href="//twitter.com/manvscript">Twitter</a></li>
+                <li><a href="//writings">Toughs & rants</a></li>
+                <li><a href="/pgp_key.txt">My public PGP key</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/vendor/three.min.js"></script>
+    <script src="js/clock.js"></script>
+</body>
+</html>
